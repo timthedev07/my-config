@@ -1,0 +1,15 @@
+{
+    "editor.fontSize": 20,
+    "terminal.integrated.fontSize": 18,
+    "editor.codeActionsOnSave": null,
+    "prettier.tabWidth": 4,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "workbench.iconTheme": "material-icon-theme",
+    "C_Cpp.default.cppStandard": "c++11",
+    "C_Cpp.default.intelliSenseMode": "macos-clang-x64",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.autoSave": "onFocusChange"
+}
