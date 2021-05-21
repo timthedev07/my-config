@@ -1,15 +1,35 @@
 {
-    "editor.fontSize": 20,
+    "[markdown]": {
+        "editor.quickSuggestions": true
+    },
+    "editor.maxTokenizationLineLength": 2000000,
+    "editor.fontSize": 19,
     "terminal.integrated.fontSize": 18,
-    "editor.codeActionsOnSave": null,
     "prettier.tabWidth": 4,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "workbench.iconTheme": "material-icon-theme",
     "C_Cpp.default.cppStandard": "c++11",
     "C_Cpp.default.intelliSenseMode": "macos-clang-x64",
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.startupEditor": "none",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+
+    "vim.easymotion": true,
+    "vim.statusBarColorControl": false,
+    "explorer.confirmDragAndDrop": false
 }
