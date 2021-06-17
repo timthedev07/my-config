@@ -2,8 +2,11 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
 
 " Specify a directory for plugins
+"
 call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'jiangmiao/auto-pairs'
+Plug 'rhysd/vim-clang-format'  
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -11,11 +14,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
-" Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-"Plug 'christoomey/vim-tmux-navigator'
 Plug 'morhetz/gruvbox'
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
-Plug 'alvan/vim-closetag' "auto closing tag 
 "" Initialize plugin system
 call plug#end()
 
@@ -28,14 +28,24 @@ let g:prettier#config#tab_width = 2
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 
+" Clang format options
+let g:clang_format#style_options = {
+            \ "AllowShortIfStatementsOnASingleLine" : "true",
+            \ "AlwaysBreakTemplateDeclarations" : "true",
+            \ "AllowShortBlocksOnASingleLine": "Never",
+            \ "Standard" : "C++11",
+            \ "BreakBeforeBraces" : "Allman"}
+let g:clang_format#auto_format = 1
+
 
 colorscheme gruvbox
 inoremap <silent><expr> <c-space> coc#refresh()
 inoremap jk <ESC>
-inoremap {<CR> {<CR>}<Esc>O<BS><Tab>
+" inoremap {<CR> {<CR>}<Esc>O<BS><Tab>
 nmap <C-n> :NERDTreeToggle<CR>
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
+" inoremap {<CR> {<CR>}<Esc>ko
 highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 set cursorline
 set number
