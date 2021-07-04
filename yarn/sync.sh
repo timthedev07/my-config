@@ -1,0 +1,1 @@
+cp ~/.config/yarn/global/package.json ./
