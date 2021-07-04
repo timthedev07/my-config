@@ -5,7 +5,6 @@ let &packpath=&runtimepath
 "
 call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'jiangmiao/auto-pairs'
 Plug 'rhysd/vim-clang-format'  
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -19,14 +18,18 @@ Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 "" Initialize plugin system
 call plug#end()
 
-:let g:NERDTreeWinSize=20
+colorscheme gruvbox
+inoremap jk <ESC>
+
+let g:NERDTreeWinSize=20
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.tsx"
 let g:NERDTreeIgnore = ['^node_modules$']
 
 " Prettier config
 let g:prettier#config#tab_width = 2
-let g:prettier#autoformat = 1
+let g:prettier#autoformat = 0
 let g:prettier#autoformat_require_pragma = 0
+
 
 " Clang format options
 let g:clang_format#style_options = {
@@ -37,10 +40,7 @@ let g:clang_format#style_options = {
             \ "BreakBeforeBraces" : "Allman"}
 let g:clang_format#auto_format = 1
 
-
-colorscheme gruvbox
 inoremap <silent><expr> <c-space> coc#refresh()
-inoremap jk <ESC>
 " inoremap {<CR> {<CR>}<Esc>O<BS><Tab>
 nmap <C-n> :NERDTreeToggle<CR>
 vmap ++ <plug>NERDCommenterToggle
@@ -55,3 +55,4 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set clipboard=unnamedplus
+

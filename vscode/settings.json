@@ -3,6 +3,7 @@
     "editor.quickSuggestions": true
   },
   "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
   "editor.maxTokenizationLineLength": 2000000,
   "editor.fontSize": 19,
   "terminal.integrated.fontSize": 18,
@@ -15,12 +16,9 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "files.autoSave": "onFocusChange",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
 
   "vim.insertModeKeyBindings": [
     {
@@ -37,5 +35,27 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "editor.tabSize": 2,
-  "prettier.tabWidth": 2
+  "prettier.tabWidth": 2,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.cursorStyle": "line",
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "cSpell.language": "en,de",
+  "C_Cpp.updateChannel": "Insiders",
+  "material-icon-theme.folders.color": "#42a5f5",
+  "editor.inlineSuggest.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "material-icon-theme.files.associations": {
+    "DEVLOG.md": "changelog"
+  }
 }
