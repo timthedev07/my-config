@@ -56,6 +56,12 @@
   "editor.inlineSuggest.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "material-icon-theme.files.associations": {
-    "DEVLOG.md": "changelog"
+    "DEVLOG.md": "changelog",
+    "PLAN.md": "contributing"
+  },
+  "material-icon-theme.folders.associations": {
+    "ISSUE_TEMPLATE": "template",
+    "test-utils": "test",
+    "gateway": "middleware"
   }
 }
