@@ -26,11 +26,17 @@
       "after": ["<Esc>"]
     }
   ],
-
+  "python.formatting.autopep8Args": ["--ignore E121"],
+  "python.formatting.provider": "black",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.tabSize": 4
+  },
+  "editor.formatOnPaste": true,
   "vim.easymotion": true,
   "vim.statusBarColorControl": false,
   "explorer.confirmDragAndDrop": false,
-  "cSpell.userWords": ["Wechat"],
+  "cSpell.userWords": ["Wechat", "asynciterable"],
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
@@ -52,7 +58,6 @@
   "editor.wordWrap": "off",
   "cSpell.language": "en,de",
   "C_Cpp.updateChannel": "Insiders",
-  "material-icon-theme.folders.color": "#42a5f5",
   "editor.inlineSuggest.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "material-icon-theme.files.associations": {
@@ -62,6 +67,13 @@
   "material-icon-theme.folders.associations": {
     "ISSUE_TEMPLATE": "template",
     "test-utils": "test",
-    "gateway": "middleware"
-  }
+    "gateway": "middleware",
+    "shibe": "database",
+    "entity": "rules",
+    "resolvers": "controller",
+    "sub-graphql": "graphql",
+    "oauth": "secure"
+  },
+  "typescript.tsserver.log": "off",
+  "files.trimTrailingWhitespace": true
 }
