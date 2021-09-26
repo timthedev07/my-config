@@ -2,10 +2,17 @@
   "[markdown]": {
     "editor.quickSuggestions": true
   },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "files.associations": {
+    "*.xml": "html",
+    "*.svg": "html"
+  },
   "editor.detectIndentation": false,
   "editor.insertSpaces": true,
   "editor.maxTokenizationLineLength": 2000000,
-  "editor.fontSize": 19,
+  "editor.fontSize": 18,
   "terminal.integrated.fontSize": 18,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -26,17 +33,18 @@
       "after": ["<Esc>"]
     }
   ],
-  "python.formatting.autopep8Args": ["--ignore E121"],
-  "python.formatting.provider": "black",
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python",
-    "editor.tabSize": 4
+    "editor.defaultFormatter": null,
+    "editor.tabSize": 4,
+    "editor.formatOnPaste": false
   },
+  "python.formatting.blackArgs": ["--line-length", "120"],
+  "python.formatting.provider": "black",
   "editor.formatOnPaste": true,
   "vim.easymotion": true,
   "vim.statusBarColorControl": false,
   "explorer.confirmDragAndDrop": false,
-  "cSpell.userWords": ["Wechat", "asynciterable"],
+  "cSpell.userWords": ["asynciterable", "curr", "imshow", "Wechat"],
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
@@ -72,8 +80,36 @@
     "entity": "rules",
     "resolvers": "controller",
     "sub-graphql": "graphql",
-    "oauth": "secure"
+    "oauth": "secure",
+    "test-data": "test"
   },
   "typescript.tsserver.log": "off",
-  "files.trimTrailingWhitespace": true
+  "files.trimTrailingWhitespace": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.enableFiletypes": ["svelte"],
+  "python.languageServer": "Jedi",
+  "editor.semanticTokenColorCustomizations": {
+    "[Default Dark+]": {
+      "rules": {
+        "variable.defaultLibrary": "#4EC9B0",
+        "variable.readonly": "#51a3c4"
+      }
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "source.python",
+        "settings": {
+          "foreground": "#9CDCFE"
+        }
+      },
+      {
+        "scope": "punctuation.separator",
+        "settings": {
+          "foreground": "#D4D4D4"
+        }
+      }
+    ]
+  }
 }
