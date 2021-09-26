@@ -109,6 +109,12 @@
         "settings": {
           "foreground": "#D4D4D4"
         }
+      },
+      {
+        "scope": "meta.function-call.generic.python",
+        "settings": {
+          "foreground": "#DCDCAA"
+        }
       }
     ]
   }
