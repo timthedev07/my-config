@@ -81,7 +81,9 @@
     "resolvers": "controller",
     "sub-graphql": "graphql",
     "oauth": "secure",
-    "test-data": "test"
+    "test-data": "test",
+    "desktop": "vm",
+    "client-controllers": "plugins"
   },
   "typescript.tsserver.log": "off",
   "files.trimTrailingWhitespace": true,
@@ -91,8 +93,7 @@
   "editor.semanticTokenColorCustomizations": {
     "[Default Dark+]": {
       "rules": {
-        "variable.defaultLibrary": "#4EC9B0",
-        "variable.readonly": "#51a3c4"
+        "variable.defaultLibrary": "#4EC9B0"
       }
     }
   },
