@@ -83,7 +83,7 @@
     "oauth": "secure",
     "test-data": "test",
     "desktop": "vm",
-    "client-controllers": "plugins"
+    "client-controllers": "plugin"
   },
   "typescript.tsserver.log": "off",
   "files.trimTrailingWhitespace": true,

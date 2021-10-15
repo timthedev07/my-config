@@ -66,21 +66,14 @@
     "body": ["className={classnames('$1')}"],
     "description": "tailwind react stuff"
   },
-  "Apollo Query Component": {
-    "prefix": "apq",
+  "NextJS page": {
+    "prefix": "np",
     "body": [
-      "interface Props {",
-      "  children: (data: QueryResult<$1, OperationVariables>) => JSX.Element;",
-      "}",
-      "",
-      "export class $2 extends React.PureComponent<Props> {",
-      "  render() {",
-      "    return (",
-      "     <Query<$1> query={$3}>{x => this.props.children(x)}</Query>",
-      "    );",
-      "  }",
-      "}"
+      "import { NextPage } from \"next\";\n",
+      "const ${TM_FILENAME_BASE}: NextPage = () => {",
+      "  return <></>;\n",
+      "export default ${TM_FILENAME_BASE}"
     ],
-    "description": "Apollo Query Component"
+    "description": "TypeScript NextJS Page"
   }
 }
