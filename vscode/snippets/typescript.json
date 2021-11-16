@@ -4,26 +4,35 @@
   // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
   // same ids are connected.
   // Example:
-  "Type GraphQL Resolver": {
-    "prefix": "resolver",
+  "Type GraphQL Resolver - Mutation": {
+    "prefix": "mutation",
     "body": [
-      "import { Resolver } from \"type-graphql\";",
+      "import { Resolver, Mutation } from \"type-graphql\";",
       "",
       "@Resolver()",
       "export class $1Resolver {",
-      "  @$2()",
-      "  async $3() {}",
+      "  @Mutation()",
+      "  async $2() {}",
       "}"
     ],
-    "description": "TypeGraphQL Resolver"
+    "description": "Type GraphQL Resolver - Mutation"
+  },
+  "Type GraphQL Resolver - Query": {
+    "prefix": "query",
+    "body": [
+      "import { Resolver, Query } from \"type-graphql\";",
+      "",
+      "@Resolver()",
+      "export class $1Resolver {",
+      "  @Query()",
+      "  async $2() {}",
+      "}"
+    ],
+    "description": "Type GraphQL Resolver - Query"
   },
   "Util Function": {
     "prefix": "ut",
-    "body": [
-      "export const $TM_FILENAME_BASE = () => {",
-      "",
-      "}"
-    ],
+    "body": ["export const $TM_FILENAME_BASE = () => {", "", "}"],
     "description": "Util Function"
   },
   "console.log": {

@@ -70,9 +70,10 @@
     "prefix": "np",
     "body": [
       "import { NextPage } from \"next\";\n",
-      "const ${TM_FILENAME_BASE}: NextPage = () => {",
-      "  return <></>;\n",
-      "export default ${TM_FILENAME_BASE}"
+      "const $1: NextPage = () => {",
+      "  return <></>;",
+      "}\n",
+      "export default $1"
     ],
     "description": "TypeScript NextJS Page"
   }

@@ -15,6 +15,7 @@
   "editor.fontSize": 18,
   "terminal.integrated.fontSize": 18,
   "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "workbench.iconTheme": "material-icon-theme",
   "C_Cpp.default.cppStandard": "c++11",
   "C_Cpp.default.intelliSenseMode": "macos-clang-x64",
@@ -80,11 +81,7 @@
     "resolvers": "controller",
     "sub-graphql": "graphql",
     "oauth": "secure",
-    "test-data": "test",
-    "desktop": "vm",
-    "client-controllers": "plugin",
-    "users": "secure",
-    "hook-options": "middleware"
+    "test-data": "test"
   },
   "typescript.tsserver.log": "off",
   "files.trimTrailingWhitespace": true,
@@ -94,7 +91,8 @@
   "editor.semanticTokenColorCustomizations": {
     "[Default Dark+]": {
       "rules": {
-        "variable.defaultLibrary": "#4EC9B0"
+        "variable.defaultLibrary": "#4EC9B0",
+        "variable.readonly": "#51a3c4"
       }
     }
   },
@@ -111,21 +109,7 @@
         "settings": {
           "foreground": "#D4D4D4"
         }
-      },
-      {
-        "scope": "meta.function-call.generic.python",
-        "settings": {
-          "foreground": "#DCDCAA"
-        }
       }
     ]
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "svelte.enable-ts-plugin": true,
-  "[go]": {
-    "editor.defaultFormatter": "golang.go",
-    "editor.insertSpaces": true
-  },
-  "editor.minimap.enabled": false,
-  "react-native-tools.showUserTips": false
+  }
 }
