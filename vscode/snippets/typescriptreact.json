@@ -76,5 +76,23 @@
       "export default $1"
     ],
     "description": "TypeScript NextJS Page"
+  },
+  "React Context": {
+    "prefix": "reactContext",
+    "body": [
+      "import React, { useContext } from \"react\";",
+      "",
+      "interface $1ContextType {};",
+      "const $1Context = React.createContext<$1ContextType>({});",
+      "",
+      "export const use$1 = () => {",
+      "  return useContext($1Context);",
+      "};",
+      "",
+      "export const $1Provider: React.FC = ({ children }) => {",
+      "  const value: $1ContextType = {};",
+      "  return <$1Context.Provider value={value}>{children}</$1Context.Provider>;",
+      "};"
+    ]
   }
 }

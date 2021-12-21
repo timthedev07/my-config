@@ -13,7 +13,7 @@
   "editor.insertSpaces": true,
   "editor.maxTokenizationLineLength": 2000000,
   "editor.fontSize": 18,
-  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.fontSize": 15,
   "editor.formatOnSave": true,
   "workbench.iconTheme": "material-icon-theme",
   "C_Cpp.default.cppStandard": "c++11",
@@ -35,10 +35,9 @@
   "[python]": {
     "editor.defaultFormatter": null,
     "editor.tabSize": 4,
-    "editor.formatOnPaste": false
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false
   },
-  "python.formatting.blackArgs": ["--line-length", "120"],
-  "python.formatting.provider": "black",
   "editor.formatOnPaste": true,
   "vim.easymotion": true,
   "vim.statusBarColorControl": false,
@@ -86,6 +85,7 @@
     "users": "secure",
     "hook-options": "middleware"
   },
+  "terminal.integrated.scrollback": 10000,
   "typescript.tsserver.log": "off",
   "files.trimTrailingWhitespace": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -127,5 +127,9 @@
     "editor.insertSpaces": true
   },
   "editor.minimap.enabled": false,
-  "react-native-tools.showUserTips": false
+  "react-native-tools.showUserTips": false,
+  "workbench.colorTheme": "Atom One Dark",
+  "react-native-tools.networkInspector.consoleLogsColorTheme": "Dark",
+  "terminal.external.osxExec": "iTerm.app",
+  "bracket-pair-colorizer-2.depreciation-notice": false
 }
