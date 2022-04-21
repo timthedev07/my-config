@@ -39,5 +39,18 @@
     "prefix": "cl",
     "body": ["console.log($1)"],
     "description": "console.log"
+  },
+  "Next.js API Route Handler": {
+    "body": [
+      "import { NextApiHandler } from \"next\";",
+      "",
+      "const handler: NextApiHandler = (req, res) => {",
+      "  $1",
+      "};",
+      "",
+      "export default handler;"
+    ],
+    "description": "Next.js API Route Handler with TS",
+    "prefix": "next-handler"
   }
 }

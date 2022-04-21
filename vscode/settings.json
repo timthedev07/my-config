@@ -9,6 +9,7 @@
     "*.xml": "html",
     "*.svg": "html"
   },
+  "typescript.preferences.importModuleSpecifier": "relative",
   "editor.detectIndentation": false,
   "editor.insertSpaces": true,
   "editor.maxTokenizationLineLength": 2000000,
@@ -35,14 +36,18 @@
   "[python]": {
     "editor.defaultFormatter": null,
     "editor.tabSize": 4,
-    "editor.formatOnPaste": false,
     "editor.formatOnSave": false
   },
-  "editor.formatOnPaste": true,
   "vim.easymotion": true,
   "vim.statusBarColorControl": false,
   "explorer.confirmDragAndDrop": false,
-  "cSpell.userWords": ["asynciterable", "curr", "imshow", "Wechat"],
+  "cSpell.userWords": [
+    "asynciterable",
+    "curr",
+    "imshow",
+    "tailwindcss",
+    "Wechat"
+  ],
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
@@ -54,7 +59,11 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/node_modules": true
+    "**/node_modules": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
   },
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
@@ -98,6 +107,8 @@
       }
     }
   },
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": true,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -128,8 +139,11 @@
   },
   "editor.minimap.enabled": false,
   "react-native-tools.showUserTips": false,
-  "workbench.colorTheme": "Atom One Dark",
   "react-native-tools.networkInspector.consoleLogsColorTheme": "Dark",
   "terminal.external.osxExec": "iTerm.app",
-  "bracket-pair-colorizer-2.depreciation-notice": false
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "svg.preview.mode": "svg",
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.bracketPairColorization.enabled": true,
+  "window.zoomLevel": -1
 }

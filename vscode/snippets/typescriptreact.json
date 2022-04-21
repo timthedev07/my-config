@@ -94,5 +94,35 @@
       "  return <$1Context.Provider value={value}>{children}</$1Context.Provider>;",
       "};"
     ]
+  },
+  "Next.js SVG Component": {
+    "prefix": "nextSvg",
+    "body": [
+      "import { FC, SVGProps } from \"react\";",
+      "",
+      "const ${TM_FILENAME_BASE}:FC<SVGProps<SVGSVGElement>> = props => {",
+      "  return (",
+      "    ",
+      "  );",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "TypeScript NextJS SVG Component"
+  },
+  "Typescript react storybook": {
+    "prefix": "tsstory",
+    "body": [
+      "import { ComponentStory, ComponentMeta } from \"@storybook/react\";",
+      "",
+      "export default {",
+      "  title: \"dragontail/$1\",",
+      "  component: $2,",
+      "} as ComponentMeta<typeof $2>;",
+      "",
+      "const $1Template: ComponentStory<typeof $2> = ({ ...args }) => (",
+      "  $3",
+      ");"
+    ]
   }
 }
