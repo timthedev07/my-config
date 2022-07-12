@@ -1,6 +1,10 @@
 {
   "[markdown]": {
-    "editor.quickSuggestions": true
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
   },
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
@@ -22,11 +26,10 @@
   "workbench.startupEditor": "none",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "files.autoSave": "onFocusChange",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
-
+  "grammarly.files.include": ["**/*.md"],
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "k"],
@@ -34,9 +37,8 @@
     }
   ],
   "[python]": {
-    "editor.defaultFormatter": null,
-    "editor.tabSize": 4,
-    "editor.formatOnSave": false
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.tabSize": 4
   },
   "vim.easymotion": true,
   "vim.statusBarColorControl": false,
@@ -99,7 +101,7 @@
   "files.trimTrailingWhitespace": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "cSpell.enableFiletypes": ["svelte"],
-  "python.languageServer": "Jedi",
+  // "python.languageServer": "Jedi",
   "editor.semanticTokenColorCustomizations": {
     "[Default Dark+]": {
       "rules": {
@@ -145,5 +147,7 @@
   "svg.preview.mode": "svg",
   "workbench.colorTheme": "One Dark Pro",
   "editor.bracketPairColorization.enabled": true,
-  "window.zoomLevel": -1
+  "window.zoomLevel": -1,
+  "git.autofetch": true,
+  "files.autoSave": "onFocusChange"
 }

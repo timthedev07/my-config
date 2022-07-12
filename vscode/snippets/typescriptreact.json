@@ -95,18 +95,18 @@
       "};"
     ]
   },
-  "Next.js SVG Component": {
-    "prefix": "nextSvg",
+  "React SVG Component": {
+    "prefix": "react-svg",
     "body": [
-      "import { FC, SVGProps } from \"react\";",
+      "import { forwardRef, SVGProps } from \"react\";",
       "",
-      "const ${TM_FILENAME_BASE}:FC<SVGProps<SVGSVGElement>> = props => {",
-      "  return (",
-      "    ",
-      "  );",
-      "}",
+      "export const ${TM_FILENAME_BASE}SVG = forwardRef<SVGSVGElement, SVGProps<SVGSVGElement>>(",
+      "  ({ ...props }, ref) => {",
+      "    return <svg ref={ref} {...props}></svg>;",
+      "  }",
+      ");",
       "",
-      "export default ${TM_FILENAME_BASE};"
+      "${TM_FILENAME_BASE}SVG.displayName = \"${TM_FILENAME_BASE}\";"
     ],
     "description": "TypeScript NextJS SVG Component"
   },
