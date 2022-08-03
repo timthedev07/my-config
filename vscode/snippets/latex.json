@@ -1,0 +1,12 @@
+{
+  "definite-integral": {
+    "prefix": "def-int",
+    "body": "\\int_{a}^{b} $1\\, dx",
+    "description": "Definite integral"
+  },
+  "indefinite-integral": {
+    "prefix": "int",
+    "body": "\\int $1\\, dx",
+    "description": "Indefinite integral"
+  }
+}
